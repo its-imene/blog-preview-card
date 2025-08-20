@@ -11,7 +11,7 @@ body {
 
 .main {
     width: 100%;
-    max-width: 320px; /* larger on big screens */
+    max-width: 420px; /* larger on big screens */
     background: #ffffff;
     border-radius: 20px;
     padding: 16px;
