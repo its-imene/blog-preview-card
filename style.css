@@ -20,10 +20,11 @@ body {
     box-sizing: border-box;
 }
 
-.main img {
+.main img#ill {
     width: 100%;
+    max-width: 250px; /* optional: limit the size */
     border-radius: 10px;
-    height: auto; /* responsive image */
+    height: auto;
 }
 
 .main button {
