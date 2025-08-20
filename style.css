@@ -20,11 +20,13 @@ body {
     box-sizing: border-box;
 }
 
-.main img#ill {
+.main img {
     width: 100%;
-    max-width: 250px; /* optional: limit the size */
+    max-width: 382px; /* optional: limit the size */
     border-radius: 10px;
     height: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .main button {
