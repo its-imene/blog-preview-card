@@ -1,0 +1,130 @@
+body {
+    background: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* better than fixed height */
+    margin: 0;
+    padding: 20px; /* gives breathing space on small screens */
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    max-width: 320px; /* larger on big screens */
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 7px 7px 0px rgb(0, 0, 0);
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+
+.main img {
+    width: 100%;
+    border-radius: 10px;
+    height: auto; /* responsive image */
+}
+
+.main button {
+    margin: 12px 0;
+    background: hsl(47, 88%, 63%);
+    width: fit-content; /* button size adapts to text */
+    padding: 6px 14px;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-family: "figtree", sans-serif;
+    font-weight: 800;
+    
+}
+
+/* Typography */
+#t1 {
+    color: hsl(0, 0%, 7%);
+    text-align: left;
+    font-family: "figtree", sans-serif;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#t2 {
+    color: hsl(0, 0%, 42%);
+    text-align: left;
+    font-family: "figtree", sans-serif;
+    font-size: 16px;
+    margin: 6px 0;
+}
+
+#t3 {
+    color: hsl(0, 0%, 7%);
+    font-family: "figtree", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+    padding-left: 5px;
+}
+
+h3 {
+    color: hsl(0, 0%, 7%);
+    font-family: "figtree", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    text-align: left;
+}
+
+/* Avatar section */
+.avt {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 12px;
+    gap: 10px; /* spacing between avatar and text */
+}
+
+#avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* 🔹 Responsive design */
+@media (max-width: 768px) {
+    .main {
+        max-width: 90%;
+        padding: 14px;
+    }
+
+    #t1 {
+        font-size: 16px;
+    }
+
+    #t2 {
+        font-size: 14px;
+    }
+
+    .main button {
+        padding: 5px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        max-width: 100%;
+        padding: 12px;
+    }
+
+    #t1 {
+        font-size: 15px;
+    }
+
+    #t2 {
+        font-size: 13px;
+    }
+
+    .main button {
+        padding: 5px 10px;
+    }
+}
